@@ -1,42 +1,47 @@
 import { Soup, Flame, Clock, Star } from 'lucide-react'
 import { useScrollAnimation } from '../hooks/useScrollAnimation'
+import SopaNaranja from '../assets/sopa-naranja.png'
+import SopaRoja from '../assets/sopa-roja.png'
+import SopaVerde from '../assets/sopa-verde.png'
+import SopaAmarilla from '../assets/sopa-amarilla.png'
+import SopaAzul from '../assets/sopa-azul.jpg'
+
 
 const sopas = [
   {
-    nombre: 'Kang Shi Fu - Res',
-    descripcion: 'Fideos instantaneos sabor carne de res con especias orientales',
-    precio: '$1.200',
+    nombre: 'Sabor Carne Picante',
+    descripcion: 'Fideos instantáneos con intenso sabor a carne picante. Para los amantes del sabor fuerte.',
+    precio: '$12.000',
     popular: true,
+    imagen: SopaNaranja,
   },
   {
-    nombre: 'Kang Shi Fu - Pollo',
-    descripcion: 'Fideos instantaneos sabor pollo con vegetales deshidratados',
-    precio: '$1.200',
-    popular: false,
-  },
-  {
-    nombre: 'Kang Shi Fu - Mariscos',
-    descripcion: 'Fideos instantaneos sabor mariscos con toque picante',
-    precio: '$1.350',
+    nombre: 'Sabor Pollo con Champiñón',
+    descripcion: 'Fideos instantáneos con delicioso sabor a pollo y champiñón. Ideal para cualquier momento del día.',
+    precio: '$12.000',
     popular: true,
+    imagen: SopaVerde,
   },
   {
-    nombre: 'Kang Shi Fu - Cerdo',
-    descripcion: 'Fideos instantaneos sabor cerdo con salsa de soja',
-    precio: '$1.200',
-    popular: false,
-  },
-  {
-    nombre: 'Kang Shi Fu - Vegetales',
-    descripcion: 'Fideos instantaneos con mix de vegetales orientales',
-    precio: '$1.100',
-    popular: false,
-  },
-  {
-    nombre: 'Kang Shi Fu - Extra Picante',
-    descripcion: 'Fideos instantaneos con salsa extra picante estilo Sichuan',
-    precio: '$1.400',
+    nombre: 'Sabor Mariscos',
+    descripcion: 'Fideos instantáneos con exquisito sabor a mariscos. Experiencia marina en tu hogar.',
+    precio: '$12.000',
     popular: true,
+    imagen: SopaAzul
+  },
+  {
+    nombre: 'Sabor Cerdo con Cebollín Frito',
+    descripcion: 'Fideos instantáneos con sabor artificial a cerdo y cebollín frito. Preparación rápida y deliciosa.',
+    precio: '$12000',
+    popular: true,
+    imagen: SopaAmarilla,
+  },
+  {
+    nombre: 'Sabor a Estofado de Carne',
+    descripcion: 'Fideos instantáneos con rico sabor a carne estofada. Comfort food en minutos.',
+    precio: '$12.000',
+    popular: true,
+    imagen: SopaRoja,
   },
 ]
 
@@ -83,13 +88,21 @@ export default function SopasSection() {
               style={{ animationDelay: cardsVisible ? `${index * 100}ms` : '0ms' }}
             >
               {sopa.popular && (
-                <span className="absolute top-4 right-4 inline-flex items-center gap-1 px-2 py-1 bg-accent text-accent-foreground text-xs font-medium rounded-full">
+                <span className="absolute top-4 right-4 z-10 inline-flex items-center gap-1 px-2 py-1 bg-accent text-accent-foreground text-xs font-medium rounded-full">
                   <Star className="w-3 h-3" /> Popular
                 </span>
               )}
-              <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center mb-4">
-                <Soup className="w-6 h-6 text-primary" />
+              <div className="relative w-full h-40 mb-4 overflow-hidden rounded-lg">
+               <img
+                src={sopa.imagen}
+                alt={sopa.nombre}
+                className="w-full h-full object-cover"
+                 />
+               <div className="absolute top-3 left-3 w-10 h-10 bg-white/80 rounded-lg flex items-center justify-center">
+              <Soup className="w-5 h-5 text-primary" />
+                </div>
               </div>
+
               <h3 className="font-serif text-xl font-semibold text-card-foreground mb-2">{sopa.nombre}</h3>
               <p className="text-muted-foreground text-sm mb-4">{sopa.descripcion}</p>
               <div className="flex items-center justify-between">

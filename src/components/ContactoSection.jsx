@@ -16,7 +16,7 @@ export default function ContactoSection() {
   const handleSubmit = (e) => {
     e.preventDefault()
     const mensaje = `Hola SyN Distribuidora!%0A%0A*Nombre:* ${formData.nombre}%0A*Telefono:* ${formData.telefono}%0A%0A*Consulta:*%0A${formData.mensaje}`
-    const whatsappUrl = `https://wa.me/5491100000000?text=${mensaje}`
+    const whatsappUrl = `https://wa.me/5491141401840?text=${mensaje}`
     window.open(whatsappUrl, '_blank')
   }
 
@@ -136,7 +136,7 @@ export default function ContactoSection() {
                   </div>
                   <div>
                     <p className="font-medium mb-1">WhatsApp</p>
-                    <p className="text-primary-foreground/80">+54 11 0000-0000</p>
+                    <p className="text-primary-foreground/80">+54 11 4140-1840</p>
                   </div>
                 </div>
                 <div className="flex items-start gap-4">
@@ -145,7 +145,7 @@ export default function ContactoSection() {
                   </div>
                   <div>
                     <p className="font-medium mb-1">Ubicacion</p>
-                    <p className="text-primary-foreground/80">Buenos Aires, Argentina</p>
+                    <p className="text-primary-foreground/80">Tristan Suarez, Provincia de Buenos Aires</p>
                   </div>
                 </div>
                 <div className="flex items-start gap-4">
@@ -168,10 +168,10 @@ export default function ContactoSection() {
             >
               <h4 className="font-serif text-xl font-bold text-foreground mb-4">Compra minima</h4>
               <p className="text-muted-foreground mb-4">
-                Para pedidos mayoristas, la compra minima es de $50.000 o 10kg de productos combinados.
+                Para pedidos mayoristas, consular la compra minima.
               </p>
               <p className="text-muted-foreground">
-                Aceptamos transferencias bancarias, efectivo y Mercado Pago.
+                Aceptamos transferencia, efectivo y Mercado Pago.
               </p>
             </div>
           </div>

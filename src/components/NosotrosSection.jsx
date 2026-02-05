@@ -1,6 +1,7 @@
 import { Users, Truck, Award, Heart } from 'lucide-react'
 import { useScrollAnimation } from '../hooks/useScrollAnimation'
 
+
 const valores = [
   {
     icon: Award,
@@ -10,7 +11,7 @@ const valores = [
   {
     icon: Truck,
     titulo: 'Entrega Rapida',
-    descripcion: 'Hacemos envios a todo el pais con tiempos de entrega optimizados.',
+    descripcion: 'Hacemos envios con tiempos de entrega optimizados.',
   },
   {
     icon: Users,
@@ -20,7 +21,7 @@ const valores = [
   {
     icon: Heart,
     titulo: 'Compromiso',
-    descripcion: 'Mas de 10 anios trabajando con pasion por los productos naturales.',
+    descripcion: 'Mas de 10 años trabajando con pasion por los productos naturales.',
   },
 ]
 
@@ -93,7 +94,7 @@ export default function NosotrosSection() {
         <div ref={statsRef} className="mt-20 grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
           <div className={`opacity-0 ${statsVisible ? 'animate-fade-in-up' : ''}`}>
             <div className="font-serif text-4xl sm:text-5xl font-bold text-primary mb-2">10+</div>
-            <p className="text-muted-foreground">Anios de experiencia</p>
+            <p className="text-muted-foreground">Años de experiencia</p>
           </div>
           <div className={`opacity-0 ${statsVisible ? 'animate-fade-in-up animate-delay-100' : ''}`}>
             <div className="font-serif text-4xl sm:text-5xl font-bold text-primary mb-2">500+</div>
