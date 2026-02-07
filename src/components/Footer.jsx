@@ -2,8 +2,8 @@ import { Instagram, Facebook, Phone } from 'lucide-react'
 
 const links = [
   { href: '#inicio', label: 'Inicio' },
-  { href: '#sopas', label: 'Sopas Kang Shi Fu' },
   { href: '#ofertas', label: 'Ofertas' },
+  { href: '#sopas', label: 'Sopas Kang Shi Fu' },
   { href: '#nosotros', label: 'Nosotros' },
   { href: '#contacto', label: 'Contacto' },
 ]
@@ -29,14 +29,7 @@ export default function Footer() {
                 <Instagram className="w-5 h-5" />
               </a>
               <a
-                href="#"
-                className="w-10 h-10 bg-background/10 rounded-lg flex items-center justify-center hover:bg-primary transition-colors"
-                aria-label="Facebook"
-              >
-                <Facebook className="w-5 h-5" />
-              </a>
-              <a
-                href="https://wa.me/5491100000000"
+                href="https://wa.me/5491141401840"
                 className="w-10 h-10 bg-background/10 rounded-lg flex items-center justify-center hover:bg-[#25D366] transition-colors"
                 aria-label="WhatsApp"
               >

@@ -58,7 +58,7 @@ export default function NosotrosSection() {
             >
               <p>
                 En <strong className="text-foreground">SyN Distribuidora</strong> nos especializamos en la venta
-                mayorista de frutos secos premium, frutas deshidratadas y productos importados de Asia.
+                mayorista de frutos secos premium, especias, semillas, hierbas y productos importados.
               </p>
               <p>
                 Somos distribuidores oficiales de las sopas instantaneas{' '}
@@ -66,7 +66,7 @@ export default function NosotrosSection() {
                 autenticos directamente a tu negocio.
               </p>
               <p>
-                Trabajamos con comercios, dieteticas, supermercados y emprendedores en todo el pais, ofreciendo precios
+                Trabajamos con comercios, dieteticas, supermercados y emprendedores, ofreciendo precios
                 competitivos y la mejor calidad del mercado.
               </p>
             </div>

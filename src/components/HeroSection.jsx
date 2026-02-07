@@ -32,7 +32,7 @@ export default function HeroSection() {
             isVisible ? 'animate-fade-in-up animate-delay-200' : ''
           }`}
         >
-          Frutos Secos Premium y Sopas Kang Shi Fu
+          Frutos Secos, Especias, Semillas, Sopas Kang Shi Fu y mas
         </p>
 
         <p
@@ -68,7 +68,7 @@ export default function HeroSection() {
             isVisible ? 'animate-fade-in animate-delay-500' : ''
           }`}
         >
-          <span className="text-sm">Explorar</span>
+          <span className="text-sm">Explorar mas</span>
           <ArrowDown className="w-5 h-5" />
         </a>
       </div>

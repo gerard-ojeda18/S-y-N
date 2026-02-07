@@ -1,5 +1,24 @@
 import { Tag, Package, Sparkles } from 'lucide-react'
 import { useScrollAnimation } from '../hooks/useScrollAnimation'
+import Almendras from '../assets/almendras.jpg'
+import Nueces from '../assets/nueces.jpg'
+import Mix from '../assets/mix.avif'
+import MixPremuim from '../assets/mix-premium.avif'
+import PasasUva from '../assets/pasas-uva.jpg'
+import Ajos from '../assets/ajos-variados.webp'
+import Arandanos from '../assets/arandanos-deshidratados.webp'
+import Caju from '../assets/caju-tostado.jpg'
+import floresJamaica from '../assets/flores.jamaica.jpg'
+import JamaicaSecas from '../assets/jamaica-secas.png'
+import Datiles from '../assets/datiles.jpg'
+import SemillasChia from '../assets/chia.jpg'
+import ChiaPremium from '../assets/chia.premium.webp'
+import ClavoOlor from '../assets/clavo.de.olor.webp'
+import Oregano from '../assets/oregano.jpg'
+import CanelaPolvo from '../assets/canela.enpolvo.webp'
+import CanelaRama from '../assets/canela.rama.jpg'
+
+
 
 const productos = [
   {
@@ -10,6 +29,7 @@ const productos = [
     unidad: 'por kg',
     oferta: true,
     categoria: 'Frutos Secos',
+    imagen: Almendras,
   },
   {
     nombre: 'Nueces sin Cascara',
@@ -19,6 +39,7 @@ const productos = [
     unidad: 'por kg',
     oferta: true,
     categoria: 'Frutos Secos',
+    imagen: Nueces,
   },
   {
     nombre: 'Mix de Frutos Secos',
@@ -28,6 +49,7 @@ const productos = [
     unidad: 'por kg',
     oferta: false,
     categoria: 'Mix',
+    imagen: Mix,
   },
   {
     nombre: 'Mix Premium',
@@ -37,6 +59,7 @@ const productos = [
     unidad: 'por kg',
     oferta: true,
     categoria: 'Mix',
+    imagen: MixPremuim,
   },
   {
     nombre: 'Pasas de Uva',
@@ -46,6 +69,7 @@ const productos = [
     unidad: 'por kg',
     oferta: false,
     categoria: 'Frutos secos',
+    imagen: PasasUva,
   },
   {
     nombre: 'Ajos variados',
@@ -54,7 +78,8 @@ const productos = [
     precioOferta: '$7.000',
     unidad: 'por kg',
     oferta: false,
-    categoria: 'Ajos',
+    categoria: 'Cabezas o Desgranados',
+    imagen: Ajos,
   },
   {
     nombre: 'Arándanos Deshidratados',
@@ -64,15 +89,17 @@ const productos = [
     unidad: 'por kg',
     oferta: true,
     categoria: 'Frutos secos',
+    imagen: Arandanos,
   },
   {
-    nombre: 'Castanas de Caju',
+    nombre: 'Castañas de Caju',
     descripcion: 'Fruto seco nutritivo y sabroso, ideal como snack o para recetas. 🌰',
     precioOriginal: null,
     precioOferta: '$21.000',
     unidad: 'por kg',
     oferta: false,
     categoria: 'Frutos Secos',
+    imagen: Caju,
   },
   {
     nombre: 'Flores de jamaica',
@@ -82,15 +109,17 @@ const productos = [
     unidad: 'por kg',
     oferta: true,
     categoria: 'Frutos Secos',
+    imagen: floresJamaica,
   },
   {
     nombre: 'Flores de jamaica deshidratadas',
     descripcion: 'Ricas en antioxidantes, ayudan a la digestión e ideales para infusiones.🌺',
     precioOriginal: null,
-    precioOferta: '$4.500',
+    precioOferta: '$20.000',
     unidad: 'por kg',
     oferta: false,
     categoria: 'Frutas Secas',
+    imagen: JamaicaSecas,
   },
   {
     nombre: 'Datiles Medjool',
@@ -100,6 +129,7 @@ const productos = [
     unidad: 'por kg',
     oferta: true,
     categoria: 'Frutas Secas',
+    imagen: Datiles,
   },
   {
     nombre: 'Semillas de chía',
@@ -108,7 +138,58 @@ const productos = [
     precioOferta: '$12.000',
     unidad: 'por kg',
     oferta: false,
-    categoria: 'Frutos Secos',
+    categoria: 'Semillas',
+    imagen: SemillasChia,
+  },
+  {
+    nombre: 'Semillas de chía Premuim',
+    descripcion: 'Seleccionadas y de alta calidad, ideales para potenciar tus comidas. 🌱',
+    precioOriginal: null,
+    precioOferta: '$12.000',
+    unidad: 'por kg',
+    oferta: false,
+    categoria: 'Semillas',
+    imagen: ChiaPremium,
+  },
+  {
+    nombre: 'Clavo de Olor',
+    descripcion: 'Especia aromática de sabor intenso, con propiedades digestivas. 🌿',
+    precioOriginal: '$28.000',
+    precioOferta: '$25.000',
+    unidad: 'por kg',
+    oferta: true,
+    categoria: 'Especias',
+    imagen: ClavoOlor
+  },
+  {
+    nombre: 'Oregano',
+    descripcion: 'Aromático y de sabor intenso, ideal para realIzar pizzas y comidas. 🌿',
+    precioOriginal: '$10.000',
+    precioOferta: '$8.000',
+    unidad: 'por kg',
+    oferta: true,
+    categoria: 'Hierbas aromaticas',
+    imagen: Oregano,
+  },
+  {
+    nombre: 'Canela en Polvo',
+    descripcion: 'Fina y aromática, ideal para postres, bebidas calientes y repostería. ✨',
+    precioOriginal: null,
+    precioOferta: '$21.000',
+    unidad: 'por kg',
+    oferta: false,
+    categoria: 'Especias',
+    imagen: CanelaPolvo,
+  },
+  {
+    nombre: 'Canela en Rama',
+    descripcion: 'Aroma intenso, perfecta para infusiones y preparaciones caseras. 🌿',
+    precioOriginal: '$48.000',
+    precioOferta: '$45.000',
+    unidad: 'por kg',
+    oferta: true,
+    categoria: 'Producto destacado',
+    imagen: CanelaRama,
   },
 ]
 
@@ -161,9 +242,13 @@ export default function OfertasSection() {
                 </div>
               )}
 
-              <div className="h-32 bg-secondary flex items-center justify-center">
-                <Package className="w-16 h-16 text-primary/30 group-hover:text-primary/50 transition-colors duration-300" />
-              </div>
+              <div className="h-32 overflow-hidden">
+              <img
+                  src={producto.imagen}
+                  alt={producto.nombre}
+                  className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
+                />
+               </div>
 
               <div className="p-5">
                 <span className="text-xs text-muted-foreground font-medium uppercase tracking-wide">

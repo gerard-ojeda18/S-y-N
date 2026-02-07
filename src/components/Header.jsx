@@ -3,8 +3,8 @@ import { Menu, X } from 'lucide-react'
 
 const navLinks = [
   { href: '#inicio', label: 'Inicio' },
-  { href: '#sopas', label: 'Sopas Kang Shi Fu' },
   { href: '#ofertas', label: 'Ofertas' },
+  { href: '#sopas', label: 'Sopas Kang Shi Fu' },
   { href: '#nosotros', label: 'Nosotros' },
   { href: '#contacto', label: 'Contacto' },
 ]

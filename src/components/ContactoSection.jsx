@@ -168,7 +168,7 @@ export default function ContactoSection() {
             >
               <h4 className="font-serif text-xl font-bold text-foreground mb-4">Compra minima</h4>
               <p className="text-muted-foreground mb-4">
-                Para pedidos mayoristas, consular la compra minima.
+                Para pedidos mayoristas, consultar la compra minima.
               </p>
               <p className="text-muted-foreground">
                 Aceptamos transferencia, efectivo y Mercado Pago.
