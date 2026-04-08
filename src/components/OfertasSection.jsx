@@ -17,8 +17,8 @@ import ClavoOlor from '../assets/clavo.de.olor.webp'
 import Oregano from '../assets/oregano.jpg'
 import CanelaPolvo from '../assets/canela.enpolvo.webp'
 import CanelaRama from '../assets/canela.rama.jpg'
-
-
+import Gelatina from '../assets/gelatina.webp'
+import ColaCaballo from '../assets/cola-de-caballo.jpg'
 
 const productos = [
   {
@@ -34,8 +34,8 @@ const productos = [
   {
     nombre: 'Nueces sin Cascara',
     descripcion: 'Nueces frescas, perfectas para repostería y consumo directo. 🌰',
-    precioOriginal: '$25.000',
-    precioOferta: '$22.000',
+    precioOriginal: '$28.000',
+    precioOferta: '$25.000',
     unidad: 'por kg',
     oferta: true,
     categoria: 'Frutos Secos',
@@ -45,7 +45,7 @@ const productos = [
     nombre: 'Mix de Frutos Secos',
     descripcion: 'Combinación de pasas de uva, mani, almendras y nueces. 🥣',
     precioOriginal: null,
-    precioOferta: '$17.000',
+    precioOferta: '$18.000',
     unidad: 'por kg',
     oferta: false,
     categoria: 'Mix',
@@ -54,8 +54,8 @@ const productos = [
   {
     nombre: 'Mix Premium',
     descripcion: 'Combinacion de almendras, nueces, caju y arandanos. 🥣',
-    precioOriginal: '$30.000',
-    precioOferta: '$28.000',
+    precioOriginal: '$33.000',
+    precioOferta: '$30.000',
     unidad: 'por kg',
     oferta: true,
     categoria: 'Mix (Productos seleccionados)',
@@ -65,7 +65,7 @@ const productos = [
     nombre: 'Pasas de Uva',
     descripcion: 'Dulzura natural y textura suave para tus recetas o snacks. 🌿',
     precioOriginal: null,
-    precioOferta: '$12.000',
+    precioOferta: '$14.000',
     unidad: 'por kg',
     oferta: false,
     categoria: 'Frutos secos',
@@ -75,7 +75,7 @@ const productos = [
     nombre: 'Ajos variados',
     descripcion: 'Intenso y aromático, ideal para realzar el sabor de tus comidas. 🧄',
     precioOriginal: null,
-    precioOferta: '$7.000',
+    precioOferta: '$10.000',
     unidad: 'por kg',
     oferta: false,
     categoria: 'Cabezas o Desgranados',
@@ -84,8 +84,8 @@ const productos = [
   {
     nombre: 'Arándanos Deshidratados',
     descripcion: 'Arándanos dulces y naturales, perfectos para ensaladas o snacks. 🫐',
-    precioOriginal: '$22.000',
-    precioOferta: '$20.000',
+    precioOriginal: '$25.000',
+    precioOferta: '$22.000',
     unidad: 'por kg',
     oferta: true,
     categoria: 'Frutos secos',
@@ -95,7 +95,7 @@ const productos = [
     nombre: 'Castañas de Caju',
     descripcion: 'Fruto seco nutritivo y sabroso, ideal como snack o para recetas. 🌰',
     precioOriginal: null,
-    precioOferta: '$21.000',
+    precioOferta: '$26.000',
     unidad: 'por kg',
     oferta: false,
     categoria: 'Frutos Secos',
@@ -115,7 +115,7 @@ const productos = [
     nombre: 'Flores de jamaica deshidratadas',
     descripcion: 'Ricas en antioxidantes, ayudan a la digestión e ideales para infusiones.🌺',
     precioOriginal: null,
-    precioOferta: '$20.000',
+    precioOferta: '$22.000',
     unidad: 'por kg',
     oferta: false,
     categoria: 'Frutas Secas',
@@ -145,7 +145,7 @@ const productos = [
     nombre: 'Semillas de chía Premuim',
     descripcion: 'Seleccionadas y de alta calidad, ideales para potenciar tus comidas. 🌱',
     precioOriginal: null,
-    precioOferta: '$14.000',
+    precioOferta: '$16.000',
     unidad: 'por kg',
     oferta: false,
     categoria: 'Semillas enteras',
@@ -154,8 +154,8 @@ const productos = [
   {
     nombre: 'Clavo de Olor',
     descripcion: 'Especia aromática de sabor intenso, con propiedades digestivas. 🌿',
-    precioOriginal: '$28.000',
-    precioOferta: '$25.000',
+    precioOriginal: '$55.000',
+    precioOferta: '$50.000',
     unidad: 'por kg',
     oferta: true,
     categoria: 'Especias',
@@ -164,13 +164,25 @@ const productos = [
   {
     nombre: 'Oregano',
     descripcion: 'Aromático y de sabor intenso, ideal para realIzar pizzas y comidas. 🌿',
-    precioOriginal: '$10.000',
-    precioOferta: '$8.000',
+    precioOriginal: '$12.000',
+    precioOferta: '$9.000',
     unidad: 'por kg',
     oferta: true,
     categoria: 'Hierbas aromaticas',
     imagen: Oregano,
   },
+  
+   {
+    nombre: 'Cola de Caballo',
+    descripcion: 'Limpia los riñones y elimina líquidos del cuerpo. 🌿',
+    precioOriginal: '$18.000',
+    precioOferta: '$15.000',
+    unidad: 'por kg',
+    oferta: true,
+    categoria: 'Hierbas medicinales',
+    imagen: ColaCaballo,
+  },
+
   {
     nombre: 'Canela en Polvo',
     descripcion: 'Fina y aromática, ideal para postres, bebidas calientes y repostería. ✨',
@@ -184,12 +196,23 @@ const productos = [
   {
     nombre: 'Canela en Rama',
     descripcion: 'Aroma intenso, perfecta para infusiones y preparaciones caseras. 🌿',
-    precioOriginal: '$48.000',
-    precioOferta: '$45.000',
+    precioOriginal: '$53.000',
+    precioOferta: '$50.000',
     unidad: 'por kg',
     oferta: true,
     categoria: 'Producto destacado',
     imagen: CanelaRama,
+  },
+
+  {
+    nombre: 'Gelatina sin sabor',
+    descripcion: 'Versátil y práctica, ideal para postres y preparaciones caseras. 🍮',
+    precioOriginal: '$30.000',
+    precioOferta: '$28.000',
+    unidad: 'por kg',
+    oferta: true,
+    categoria: 'Producto destacado',
+    imagen: Gelatina,
   },
 ]
 
