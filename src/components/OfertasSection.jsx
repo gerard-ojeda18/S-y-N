@@ -19,6 +19,14 @@ import CanelaPolvo from '../assets/canela.enpolvo.webp'
 import CanelaRama from '../assets/canela.rama.jpg'
 import Gelatina from '../assets/gelatina.webp'
 import ColaCaballo from '../assets/cola-de-caballo.jpg'
+import AnisEstrellado from '../assets/anis-estrellado.jpg'
+import AnisComun from '../assets/anis-comun.avif'
+import ManiTostado from '../assets/Mani-Tostado.png'
+import Manzanilla from '../assets/manzanilla-seca.jpg'
+
+
+
+
 
 const productos = [
   {
@@ -213,6 +221,50 @@ const productos = [
     oferta: true,
     categoria: 'Producto destacado',
     imagen: Gelatina,
+  },
+
+   {
+    nombre: 'Anis Estrellado',
+    descripcion: 'Especia asiática con forma de estrella y propiedades medicinales. ✨',
+    precioOriginal: null,
+    precioOferta: '$25.000',
+    unidad: 'por kg',
+    oferta: false,
+    categoria: 'Especias',
+    imagen: AnisEstrellado,
+  },
+
+  {
+    nombre: 'Anis Comun',
+    descripcion: 'Semilla mediterránea digestiva, alivia gases, tos e insomnio. ✨',
+    precioOriginal: null,
+    precioOferta: '$22.000',
+    unidad: 'por kg',
+    oferta: false,
+    categoria: 'Semillas',
+    imagen: AnisComun,
+  },
+
+  {
+    nombre: 'Mani Tostado (Con o Sin Sal)',
+    descripcion: 'Snack nutritivo rico en proteínas, grasas saludables y energía. 🌰',
+    precioOriginal: null,
+    precioOferta: '$10.000',
+    unidad: 'por kg',
+    oferta: false,
+    categoria: 'Legumbres',
+    imagen: ManiTostado,
+  },
+
+  {
+    nombre: 'Manzanilla Deshidratada',
+    descripcion: 'Flor seca calmante, alivia digestión, ansiedad e insomnio. 🌱',
+    precioOriginal: null,
+    precioOferta: '$35.000',
+    unidad: 'por kg',
+    oferta: false,
+    categoria: 'Flor Medicinal',
+    imagen: Manzanilla,
   },
 ]
 
